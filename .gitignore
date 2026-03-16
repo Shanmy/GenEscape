@@ -32,3 +32,6 @@ output/
 
 # Jupyter
 .ipynb_checkpoints/
+
+*.pdf
+diagnose.py
