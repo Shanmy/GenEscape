@@ -1,6 +1,7 @@
-# GenEscape: Hierarchical Multi-Agent Generation of Escape Room Puzzles
+# GenEscape: Hierarchical Multi-Agent Generation of Escape Room Puzzles 🧩
 
-A Python implementation of the [GenEscape paper](https://arxiv.org/abs/2506.21839) by Shan et al. (University of Washington, 2025).
+A Python re-implementation of the [GenEscape paper](https://arxiv.org/abs/2506.21839) by **Mengyi Shan, Brian Curless, Ira Kemelmacher-Shlizerman, and Steve Seitz** (University of Washington).
+Published at the **Hi-Gen Workshop, ICCV 2025**.
 
 GenEscape uses a hierarchical multi-agent framework to generate 2D escape room puzzle images that are both **visually appealing** and **logically solvable**. Four specialized LLM agents collaborate through iterative feedback loops — refining a scene graph, a 2D layout, and a final photorealistic image — until the puzzle is verified as solvable without shortcuts.
 
@@ -89,14 +90,6 @@ python main.py --scene laboratory --objects magnet key --solution-length 6 --max
 
 ```bash
 python main.py --provider gemini --scene "birthday party" --objects balloon dart --play
-```
-
-### Play an existing puzzle
-
-```bash
-python main.py --play \
-  --image output/prison_bucket_blanket_20260316_112549/stage3_room_v0.png \
-  --solution output/prison_bucket_blanket_20260316_112549/final_solution.txt
 ```
 
 ### All options
@@ -196,10 +189,11 @@ To use a different model, set the corresponding environment variable (e.g. `GEMI
 ## Citation
 
 ```bibtex
-@article{shan2025genescape,
+@inproceedings{shan2025genescape,
   title     = {GenEscape: Hierarchical Multi-Agent Generation of Escape Room Puzzles},
   author    = {Shan, Mengyi and Curless, Brian and Kemelmacher-Shlizerman, Ira and Seitz, Steve},
-  journal   = {arXiv preprint arXiv:2506.21839},
+  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops},
+  series    = {Hi-Gen Workshop},
   year      = {2025}
 }
 ```
