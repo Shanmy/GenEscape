@@ -1,6 +1,6 @@
 # GenEscape: Hierarchical Multi-Agent Generation of Escape Room Puzzles 🧩
 
-A Python re-implementation of the [GenEscape paper](https://arxiv.org/abs/2506.21839) by **Mengyi Shan, Brian Curless, Ira Kemelmacher-Shlizerman, and Steve Seitz** (University of Washington).
+A Python implementation of the [GenEscape paper](https://arxiv.org/abs/2506.21839) by **Mengyi Shan, Brian Curless, Ira Kemelmacher-Shlizerman, and Steve Seitz** (University of Washington).
 Published at the **Hi-Gen Workshop, ICCV 2025**.
 
 GenEscape uses a hierarchical multi-agent framework to generate 2D escape room puzzle images that are both **visually appealing** and **logically solvable**. Four specialized LLM agents collaborate through iterative feedback loops — refining a scene graph, a 2D layout, and a final photorealistic image — until the puzzle is verified as solvable without shortcuts.
